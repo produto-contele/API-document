@@ -583,27 +583,59 @@
                             <thead>
                                 <tr>
                                     <th>Parâmetro</th>
-                                    <th>Tipo</th>
+                                    <th>Tipo de Dado</th>
                                     <th>Utilização</th>
                                     <th>Descrição</th>
                                 </tr>
                             </thead>
                             <tbody id="tbody-tasks">
+                                <tr><td>createdAt</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>Data da criação da Visita</td></tr>
+                                <tr><td>updatedAt</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>Data de atualização da Visita</td></tr>
                                 <tr><td>id</td><td>String</td><td><span class="badge get">GET</span></td><td>ID da Visita</td></tr>
                                 <tr><td>poiId</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>ID do Local da Visita</td></tr>
+                                <tr><td>customPoiId</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>ID Customizado do Local da Visita</td></tr>
+                                <tr><td>customId</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>ID Customizado da Visita</td></tr>
                                 <tr><td>userId</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>ID do Usuário da Visita</td></tr>
+                                <tr><td>timezone</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>Fuso Horário da Visita</td></tr>
                                 <tr><td>datetime</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>Data e Hora da Visita</td></tr>
-                                <tr><td>withTime</td><td>Boolean</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>Visita com horário</td></tr>
+                                <tr><td>withTime</td><td>Boolean</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>Visita com horário (Verdadeiro ou Falso)</td></tr>
                                 <tr><td>foreignOs</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>Número da OS personalizada</td></tr>
                                 <tr><td>status</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>Status da Visita</td></tr>
                                 <tr><td>checkoutTime</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>Data e Hora do Check-Out</td></tr>
+                                <tr><td>checkinTime</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>Data e Hora do Check-In</td></tr>
                                 <tr><td>observation</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>Observação da Visita</td></tr>
+                                <tr><td>comments</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>Comentários da Visita</td></tr>
+                                <tr><td>justification</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>Justificativa da Recusa da Visita</td></tr>
                                 <tr><td>os</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>Número da OS</td></tr>
+                                <tr><td>photos</td><td>String</td><td><span class="badge get">GET</span> <span class="badge post">POST</span></td><td>Links das Fotos da OS</td></tr>
+                                <tr><td>originalDate</td><td>String</td><td><span class="badge get">GET</span></td><td>Data original do agendamento</td></tr>
+                                <tr><td>rescheduled</td><td>Boolean</td><td><span class="badge get">GET</span></td><td>Visita reagendada (Verdadeiro ou Falso)</td></tr>
                                 <tr><td><strong>poi</strong></td><td>Array</td><td><span class="badge get">GET</span></td><td>Local da Visita</td></tr>
+                                <tr><td>∟ createdAt</td><td>String</td><td><span class="badge get">GET</span></td><td>Data de Criação do Local da Visita</td></tr>
+                                <tr><td>∟ updatedAt</td><td>String</td><td><span class="badge get">GET</span></td><td>Data de Atualização do Local da Visita</td></tr>
+                                <tr><td>∟ id</td><td>String</td><td><span class="badge get">GET</span></td><td>ID do Local da Visita</td></tr>
+                                <tr><td>∟ customId</td><td>String</td><td><span class="badge get">GET</span></td><td>ID Customizado do Local da Visita</td></tr>
                                 <tr><td>∟ name</td><td>String</td><td><span class="badge get">GET</span></td><td>Nome do Local da Visita</td></tr>
                                 <tr><td>∟ corporateName</td><td>String</td><td><span class="badge get">GET</span></td><td>Razão Social do Local da Visita</td></tr>
+                                <tr><td>∟ cnpj_cpf</td><td>String</td><td><span class="badge get">GET</span></td><td>Documento do Local da Visita</td></tr>
+                                <tr><td>∟ lat</td><td>Number</td><td><span class="badge get">GET</span></td><td>Latitude do Local da Visita</td></tr>
+                                <tr><td>∟ lng</td><td>Number</td><td><span class="badge get">GET</span></td><td>Longitude do Local da Visita</td></tr>
+                                <tr><td>∟ status</td><td>String</td><td><span class="badge get">GET</span></td><td>Status do Local da Visita</td></tr>
                                 <tr><td><strong>address</strong></td><td>Array</td><td><span class="badge get">GET</span></td><td>Endereços do Local</td></tr>
+                                <tr><td>∟ neighborhood</td><td>String</td><td><span class="badge get">GET</span></td><td>Bairro do Local da Visita</td></tr>
+                                <tr><td>∟ street</td><td>String</td><td><span class="badge get">GET</span></td><td>Logradouro do Local da Visita</td></tr>
+                                <tr><td>∟ state</td><td>String</td><td><span class="badge get">GET</span></td><td>Estado do Local da Visita</td></tr>
+                                <tr><td>∟ zipcode</td><td>String</td><td><span class="badge get">GET</span></td><td>CEP do Local da Visita</td></tr>
+                                <tr><td>∟ number</td><td>String</td><td><span class="badge get">GET</span></td><td>Número do Local da Visita</td></tr>
+                                <tr><td>∟ complement</td><td>String</td><td><span class="badge get">GET</span></td><td>Complemento do Local da Visita</td></tr>
+                                <tr><td>∟ city</td><td>String</td><td><span class="badge get">GET</span></td><td>Cidade do Local da Visita</td></tr>
+                                <tr><td><strong>contacts</strong></td><td>Array</td><td><span class="badge get">GET</span></td><td>Contatos do Local</td></tr>
+                                <tr><td>∟ name</td><td>String</td><td><span class="badge get">GET</span></td><td>Contato do Local da Visita</td></tr>
+                                <tr><td>∟ phone</td><td>String</td><td><span class="badge get">GET</span></td><td>Telefone do Local da Visita</td></tr>
+                                <tr><td>∟ email</td><td>String</td><td><span class="badge get">GET</span></td><td>E-mail do Local da Visita</td></tr>
                                 <tr><td>categoryId</td><td>String</td><td><span class="badge get">GET</span></td><td>ID da Categoria da Visita</td></tr>
+                                <tr><td>categoryName</td><td>String</td><td><span class="badge get">GET</span></td><td>Nome da Categoria da Visita</td></tr>
+                                <tr><td>categoryColor</td><td>String</td><td><span class="badge get">GET</span></td><td>Cor da Categoria da Visita (Hex)</td></tr>
                                 <tr><td>deleted_taks_ids</td><td>String</td><td><span class="badge delete">DELETE</span></td><td>ID’s das Visitas a serem deletadas</td></tr>
                             </tbody>
                         </table>
